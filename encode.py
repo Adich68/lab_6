@@ -3,11 +3,6 @@ def encoder(password):
     for i in password:
         encoded_password += str((int(i) + 3) % 10)
     return encoded_password
-def decoder(password):
-    decoded_password = ""
-    for i in password:
-        decoded_password += str((int(i) - 3) % 10)
-    return decoded_password
 
 def main():
     while True:
