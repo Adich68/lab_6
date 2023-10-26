@@ -12,11 +12,10 @@ def main():
         print("2. Decode")
         print("3. Quit")
         print()
-
         user_input = input("Please enter an option: ")
-        user_password = input("Please enter your password to encode: ")
-        encoded_password = encoder(user_password)
         if user_input == '1':
+            user_password = input("Please enter your password to encode: ")
+            encoded_password = encoder(user_password)
             print("Your password has been encoded and stored!")
             print()
         elif user_password == '2':
